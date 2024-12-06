@@ -92,7 +92,6 @@ img {
     color: #232946;
     background: #eebbc3;
 }
-
 .steps h2,
 .steps h3 {
     color: #232946;
@@ -127,34 +126,57 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+ /* @media screen and  (min-width: 768px) and (max-width: 3000px) {
+     
+     .container {
+         width:  80%;
+         margin: 0 auto;
+         padding: 0 20px;
+     }
+ } */
+ /* medium */
  @media screen and (max-width: 768px) {
-    
-    .container {
-        width:  768px;
-        margin: 0 auto;
-        padding: 0 20px;
+     
+       .container {
+           width:80%;
+           margin: 0 auto;
+           padding: 0 20px;
+        }
     }
-}
-
+    /* small */
 @media screen and (max-width: 480px) {
-    
+        
     .container {
-        width:  480px;
+        width: 80%;
         margin: 0 auto;
         padding: 0 20px;
     }
-    .steps .col {
-        width: 100% ;
+    img{
+        margin-top: 2em;
     }
-    
-   .row{
+    .row{
         display: block;
-   }
-   .why-us .col-left {
-    width: 100%;
-}
-
-.why-us .col-right {
-    width: 100%;
-}
-}
+    }
+    /* selettore avanzato */
+    .steps .col,
+    .why-us .col-left,
+    .why-us .col-right,
+    .lessons .col {
+        width: 100%;
+    }
+          
+    /* .steps .col {
+     width: 100% ;
+    }
+           
+    .why-us .col-left {
+         width: 100%;
+     }
+                        
+     .why-us .col-right {
+       width: 100%;
+    }
+    .lessons .col {
+        width: 100%;
+    } */
+    }
